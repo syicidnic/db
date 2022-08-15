@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/upper/db/v4"
+	"github.com/syicidnic/db"
 )
 
 var (
