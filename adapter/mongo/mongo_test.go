@@ -31,8 +31,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/suite"
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/testsuite"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/testsuite"
 	"gopkg.in/mgo.v2/bson"
 )
 

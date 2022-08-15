@@ -13,11 +13,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/cache"
-	"github.com/upper/db/v4/internal/sqladapter/compat"
-	"github.com/upper/db/v4/internal/sqladapter/exql"
-	"github.com/upper/db/v4/internal/sqlbuilder"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/cache"
+	"github.com/syicidnic/db/internal/sqladapter/compat"
+	"github.com/syicidnic/db/internal/sqladapter/exql"
+	"github.com/syicidnic/db/internal/sqlbuilder"
 )
 
 var (

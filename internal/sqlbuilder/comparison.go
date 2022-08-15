@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/adapter"
-	"github.com/upper/db/v4/internal/sqladapter/exql"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/adapter"
+	"github.com/syicidnic/db/internal/sqladapter/exql"
 )
 
 var comparisonOperators = map[adapter.ComparisonOperator]string{

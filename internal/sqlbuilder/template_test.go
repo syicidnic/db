@@ -1,8 +1,8 @@
 package sqlbuilder
 
 import (
-	"github.com/upper/db/v4/internal/cache"
-	"github.com/upper/db/v4/internal/sqladapter/exql"
+	"github.com/syicidnic/db/internal/cache"
+	"github.com/syicidnic/db/internal/sqladapter/exql"
 )
 
 const (

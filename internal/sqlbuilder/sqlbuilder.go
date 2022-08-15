@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/upper/db/v4"
+	"github.com/syicidnic/db"
 )
 
 // Engine represents a SQL database engine.

@@ -32,11 +32,11 @@ import (
 	"strconv"
 	"strings"
 
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/adapter"
-	"github.com/upper/db/v4/internal/reflectx"
-	"github.com/upper/db/v4/internal/sqladapter/compat"
-	"github.com/upper/db/v4/internal/sqladapter/exql"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/adapter"
+	"github.com/syicidnic/db/internal/reflectx"
+	"github.com/syicidnic/db/internal/sqladapter/compat"
+	"github.com/syicidnic/db/internal/sqladapter/exql"
 )
 
 // MapOptions represents options for the mapper.
