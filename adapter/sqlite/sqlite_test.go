@@ -7,7 +7,7 @@ import (
 	"database/sql"
 
 	"github.com/stretchr/testify/suite"
-	"github.com/syicidnic/db/internal/testsuite"
+	"github.com/upper/db/v4/internal/testsuite"
 )
 
 type AdapterTests struct {

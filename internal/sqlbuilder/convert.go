@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/syicidnic/db/internal/adapter"
-	"github.com/syicidnic/db/internal/sqladapter/exql"
+	"github.com/upper/db/v4/internal/adapter"
+	"github.com/upper/db/v4/internal/sqladapter/exql"
 )
 
 var (
@@ -57,7 +57,7 @@ func toInterfaceArguments(value interface{}) (args []interface{}, isSlice bool) 
 
 		// Byte slice gets transformed into a string.
 		if v.Type().Elem().Kind() == reflect.Uint8 {
-			return []interface{}{string(v.Bytes())}, false
+			return []interface{}{string(value.([]byte))}, false
 		}
 
 		total = v.Len()

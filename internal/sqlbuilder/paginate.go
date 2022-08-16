@@ -7,8 +7,8 @@ import (
 	"math"
 	"strings"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/immutable"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/immutable"
 )
 
 var (

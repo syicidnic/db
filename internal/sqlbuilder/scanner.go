@@ -24,7 +24,7 @@ package sqlbuilder
 import (
 	"database/sql"
 
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 )
 
 type scanner struct {

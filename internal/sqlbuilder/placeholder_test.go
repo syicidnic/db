@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 )
 
 func TestPrepareForDisplay(t *testing.T) {

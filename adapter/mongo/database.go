@@ -31,7 +31,7 @@ import (
 	"sync"
 	"time"
 
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 	mgo "gopkg.in/mgo.v2"
 )
 

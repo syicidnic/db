@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/suite"
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 )
 
 const TimeZone = "Canada/Eastern"

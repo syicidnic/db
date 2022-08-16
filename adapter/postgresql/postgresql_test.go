@@ -25,7 +25,6 @@ import (
 	"context"
 	"database/sql"
 	"database/sql/driver"
-	"encoding/json"
 	"fmt"
 	"math/rand"
 	"strings"
@@ -36,8 +35,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/testsuite"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/testsuite"
 )
 
 type customJSONBObjectArray []customJSONB
@@ -230,8 +229,6 @@ func testPostgreSQLTypes(t *testing.T, sess db.Session) {
 		StringArray  StringArray `db:"string_array,stringarray"`
 		JSONBMap     JSONBMap    `db:"jsonb_map"`
 
-		RawJSONBMap *json.RawMessage `db:"raw_jsonb_map,omitempty"`
-
 		PGTypeInline `db:",inline"`
 
 		PGTypeAutoInline `db:",inline"`
@@ -278,7 +275,6 @@ func testPostgreSQLTypes(t *testing.T, sess db.Session) {
 	integerArrayValue := Int64Array{1, 2, 3, 4}
 	stringArrayValue := StringArray{"a", "b", "c"}
 	jsonbMapValue := JSONBMap{"Hello": "World"}
-	rawJSONBMap := json.RawMessage(`{"foo": "bar"}`)
 
 	testValue := "Hello world!"
 
@@ -332,9 +328,6 @@ func testPostgreSQLTypes(t *testing.T, sess db.Session) {
 				AutoJSONBMapString:  map[string]interface{}{"a": "x", "b": "67"},
 				AutoJSONBMapInteger: map[string]interface{}{"a": 12.0, "b": 13.0},
 			},
-		},
-		PGType{
-			RawJSONBMap: &rawJSONBMap,
 		},
 		PGType{
 			IntegerValue: integerValue,

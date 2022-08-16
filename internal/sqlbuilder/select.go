@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/adapter"
-	"github.com/syicidnic/db/internal/immutable"
-	"github.com/syicidnic/db/internal/sqladapter/exql"
+	"github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/adapter"
+	"github.com/upper/db/v4/internal/immutable"
+	"github.com/upper/db/v4/internal/sqladapter/exql"
 )
 
 type selectorQuery struct {

@@ -13,11 +13,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/cache"
-	"github.com/syicidnic/db/internal/sqladapter/compat"
-	"github.com/syicidnic/db/internal/sqladapter/exql"
-	"github.com/syicidnic/db/internal/sqlbuilder"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/cache"
+	"github.com/upper/db/v4/internal/sqladapter/compat"
+	"github.com/upper/db/v4/internal/sqladapter/exql"
+	"github.com/upper/db/v4/internal/sqlbuilder"
 )
 
 var (
@@ -358,7 +358,7 @@ func (sess *sessionWithContext) Open() error {
 		}
 
 		sqlDB.SetConnMaxLifetime(sess.ConnMaxLifetime())
-		//sqlDB.SetConnMaxIdleTime(sess.ConnMaxIdleTime())
+		sqlDB.SetConnMaxIdleTime(sess.ConnMaxIdleTime())
 		sqlDB.SetMaxIdleConns(sess.MaxIdleConns())
 		sqlDB.SetMaxOpenConns(sess.MaxOpenConns())
 		return nil
@@ -562,12 +562,12 @@ func (sess *sessionWithContext) SetConnMaxLifetime(t time.Duration) {
 	}
 }
 
-/*func (sess *sessionWithContext) SetConnMaxIdleTime(t time.Duration) {
+func (sess *sessionWithContext) SetConnMaxIdleTime(t time.Duration) {
 	sess.Settings.SetConnMaxIdleTime(t)
 	if sessDB := sess.DB(); sessDB != nil {
 		sessDB.SetConnMaxIdleTime(sess.Settings.ConnMaxIdleTime())
 	}
-}*/
+}
 
 func (sess *sessionWithContext) SetMaxIdleConns(n int) {
 	sess.Settings.SetMaxIdleConns(n)

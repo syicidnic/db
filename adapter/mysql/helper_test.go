@@ -27,9 +27,9 @@ import (
 	"os"
 	"time"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/sqladapter"
-	"github.com/syicidnic/db/internal/testsuite"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/sqladapter"
+	"github.com/upper/db/v4/internal/testsuite"
 )
 
 var settings = ConnectionURL{

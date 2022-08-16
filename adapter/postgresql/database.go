@@ -28,10 +28,10 @@ import (
 	"fmt"
 	"strings"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/sqladapter"
-	"github.com/syicidnic/db/internal/sqladapter/exql"
-	"github.com/syicidnic/db/internal/sqlbuilder"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/sqladapter"
+	"github.com/upper/db/v4/internal/sqladapter/exql"
+	"github.com/upper/db/v4/internal/sqlbuilder"
 )
 
 type database struct {

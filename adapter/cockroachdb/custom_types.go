@@ -27,7 +27,7 @@ import (
 	"database/sql/driver"
 	"time"
 
-	"github.com/syicidnic/db/internal/sqlbuilder"
+	"github.com/upper/db/v4/internal/sqlbuilder"
 )
 
 // JSONBMap represents a map of interfaces with string keys

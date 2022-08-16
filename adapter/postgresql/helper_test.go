@@ -26,9 +26,9 @@ import (
 	"fmt"
 	"os"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/sqladapter"
-	"github.com/syicidnic/db/internal/testsuite"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/sqladapter"
+	"github.com/upper/db/v4/internal/testsuite"
 )
 
 var settings = ConnectionURL{
@@ -194,7 +194,6 @@ func (h *Helper) TearUp() error {
 			, integer_array integer[]
 			, string_array text[]
 			, jsonb_map jsonb
-			, raw_jsonb_map jsonb
 
 			, integer_array_ptr integer[]
 			, string_array_ptr text[]

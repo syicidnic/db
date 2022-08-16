@@ -36,8 +36,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/testsuite"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/testsuite"
 )
 
 type customJSONBObjectArray []customJSONB

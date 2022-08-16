@@ -24,7 +24,7 @@ package sqlbuilder
 import (
 	"database/sql"
 
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 )
 
 // Tx represents a transaction on a SQL database. A transaction is like a

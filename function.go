@@ -22,7 +22,7 @@
 package db
 
 import (
-	"github.com/syicidnic/db/internal/adapter"
+	"github.com/upper/db/v4/internal/adapter"
 )
 
 // FuncExpr represents functions.

@@ -26,8 +26,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	db "github.com/syicidnic/db"
-	"github.com/syicidnic/db/internal/immutable"
+	db "github.com/upper/db/v4"
+	"github.com/upper/db/v4/internal/immutable"
 )
 
 type Result struct {

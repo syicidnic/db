@@ -31,11 +31,11 @@ import (
 
 	"encoding/json"
 
-	db "github.com/syicidnic/db"
+	db "github.com/upper/db/v4"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/syicidnic/db/internal/immutable"
+	"github.com/upper/db/v4/internal/immutable"
 )
 
 type resultQuery struct {

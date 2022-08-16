@@ -33,7 +33,7 @@
 //  import (
 //  	"log"
 //
-//  	"github.com/syicidnic/db/adapter/postgresql" // Imports the postgresql adapter.
+//  	"github.com/upper/db/v4/adapter/postgresql" // Imports the postgresql adapter.
 //  )
 //
 //  var settings = postgresql.ConnectionURL{

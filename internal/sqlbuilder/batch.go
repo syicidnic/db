@@ -1,7 +1,7 @@
 package sqlbuilder
 
 import (
-	"github.com/syicidnic/db"
+	"github.com/upper/db/v4"
 )
 
 // BatchInserter provides a helper that can be used to do massive insertions in

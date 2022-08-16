@@ -26,10 +26,9 @@ package cockroachdb
 import (
 	"context"
 	"database/sql"
-	"time"
-
 	_ "github.com/lib/pq"
-	"github.com/syicidnic/db/internal/sqladapter"
+	"github.com/upper/db/v4/internal/sqladapter"
+	"time"
 )
 
 func (*database) OpenDSN(sess sqladapter.Session, dsn string) (*sql.DB, error) {
