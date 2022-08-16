@@ -358,7 +358,7 @@ func (sess *sessionWithContext) Open() error {
 		}
 
 		sqlDB.SetConnMaxLifetime(sess.ConnMaxLifetime())
-		sqlDB.SetConnMaxIdleTime(sess.ConnMaxIdleTime())
+		//sqlDB.SetConnMaxIdleTime(sess.ConnMaxIdleTime())
 		sqlDB.SetMaxIdleConns(sess.MaxIdleConns())
 		sqlDB.SetMaxOpenConns(sess.MaxOpenConns())
 		return nil
@@ -562,12 +562,13 @@ func (sess *sessionWithContext) SetConnMaxLifetime(t time.Duration) {
 	}
 }
 
+/*
 func (sess *sessionWithContext) SetConnMaxIdleTime(t time.Duration) {
 	sess.Settings.SetConnMaxIdleTime(t)
 	if sessDB := sess.DB(); sessDB != nil {
 		sessDB.SetConnMaxIdleTime(sess.Settings.ConnMaxIdleTime())
 	}
-}
+}*/
 
 func (sess *sessionWithContext) SetMaxIdleConns(n int) {
 	sess.Settings.SetMaxIdleConns(n)
