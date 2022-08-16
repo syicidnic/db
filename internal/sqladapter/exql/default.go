@@ -1,7 +1,7 @@
 package exql
 
 import (
-	"github.com/upper/db/v4/internal/cache"
+	"github.com/syicidnic/db/internal/cache"
 )
 
 const (

@@ -25,8 +25,8 @@ import (
 	"database/sql"
 	"os"
 
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/testsuite"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/testsuite"
 )
 
 var settings = ConnectionURL{

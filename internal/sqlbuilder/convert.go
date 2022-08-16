@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/upper/db/v4/internal/adapter"
-	"github.com/upper/db/v4/internal/sqladapter/exql"
+	"github.com/syicidnic/db/internal/adapter"
+	"github.com/syicidnic/db/internal/sqladapter/exql"
 )
 
 var (

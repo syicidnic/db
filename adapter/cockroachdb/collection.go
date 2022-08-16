@@ -22,8 +22,8 @@
 package cockroachdb
 
 import (
-	db "github.com/upper/db/v4"
-	"github.com/upper/db/v4/internal/sqladapter"
+	db "github.com/syicidnic/db"
+	"github.com/syicidnic/db/internal/sqladapter"
 )
 
 type collectionAdapter struct {

@@ -1,4 +1,4 @@
-module github.com/upper/db/v4
+module github.com/syicidnic/db
 
 go 1.15
 

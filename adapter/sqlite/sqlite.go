@@ -24,10 +24,10 @@ package sqlite
 import (
 	"database/sql"
 
-	db "github.com/upper/db/v4"
+	db "github.com/syicidnic/db"
 
-	"github.com/upper/db/v4/internal/sqladapter"
-	"github.com/upper/db/v4/internal/sqlbuilder"
+	"github.com/syicidnic/db/internal/sqladapter"
+	"github.com/syicidnic/db/internal/sqlbuilder"
 )
 
 // Adapter is the public name of the adapter.
